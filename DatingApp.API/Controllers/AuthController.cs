@@ -25,7 +25,7 @@ namespace DatingApp.API.Controllers
             _AuthRepo = _authRepo;
             _Config = config;
         }
-        [HttpPost("Register")]
+        [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterUserDto registerUserDto)
         {
             if (!ModelState.IsValid)
